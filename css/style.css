@@ -81,14 +81,14 @@ main {
 .form__social {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 60px;
 }
 .form__field {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 60px;
 }
 .form__button {
@@ -197,11 +197,7 @@ main {
 }
 .input input:focus {
   outline: none;
-  border-left-width: 5px;
   border-left: 2px solid #3597FC;
-}
-.input input::-moz-placeholder {
-  color: #dddddd;
 }
 .input input::placeholder {
   color: #dddddd;
@@ -214,7 +210,7 @@ main {
   padding: 0;
   margin-top: 40px;
   margin-bottom: 140px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .radio-group__item {
   display: flex;
@@ -306,7 +302,18 @@ main {
     max-width: 600px;
   }
   .registration__bg {
-    height: 100px;
-    width: 100%;
+    height: 300px;
+    width: auto;
   }
-}/*# sourceMappingURL=style.css.map */
+  .form__social {
+    flex-wrap: wrap;
+  }
+  .form__field {
+    flex-wrap: wrap;
+  }
+  .radio-group {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
