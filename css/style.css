@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  background-color: #EFF6FF;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.header img {
+  padding-left: 40px;
+  width: 140px;
+}
+
+.registration {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 0px 0px 40px 20px rgba(44, 107, 171, 0.1);
+}
+.registration__content {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 60px;
+}
+.registration__header {
+  margin-bottom: 60px;
+}
+.registration__title {
+  font-size: 30px;
+  color: #2A4A5C;
+  font-weight: 600;
+}
+.registration__subtitle {
+  font-size: 18px;
+  color: #677882;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+.registration__item {
+  display: flex;
+  flex-direction: column;
+}
+.registration__bg {
+  width: 760px;
+  height: 1000px;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+}
+.registration__bg img {
+  width: 100%;
+  height: auto;
+}
+
+.form__item {
+  margin-bottom: 60px;
+}
+.form__social {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.form__field {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.form__button {
+  width: 250px;
+  height: 40px;
+  background-color: #3597FC;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form__button:hover {
+  background-color: #00a6ff;
+}
+.form__button:active {
+  opacity: 0.9;
+}
+
+.item__title {
+  font-size: 18px;
+  color: #2A4A5C;
+  font-weight: 500;
+}
+.item__subtitle {
+  font-size: 14px;
+  color: #677882;
+  font-weight: 500;
+}
+
+.social__button {
+  width: 245px;
+  height: 45px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-left: 16px;
+  background-color: #255B9B;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
+.social__button:hover {
+  background-color: #0076B6;
+}
+.social__button:active {
+  opacity: 0.9;
+}
+
+.or {
+  position: relative;
+  text-align: center;
+  max-width: 250px;
+  margin: 50px auto;
+}
+.or span {
+  position: relative;
+  background-color: white;
+  padding: 0 10px;
+  color: #414141;
+  z-index: 2;
+  font-size: 11px;
+  font-weight: 700;
+}
+.or::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 250px;
+  height: 1px;
+  background-color: #EFEFEF;
+}
+
+.input {
+  position: relative;
+  width: 245px;
+  height: 55px;
+  display: flex;
+  justify-content: flex-end;
+}
+.input label {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 14px;
+  color: #95A8B6;
+}
+.input input {
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  border: 1px solid #EFEFEF;
+}
+.input input:focus {
+  outline: none;
+  border-left-width: 5px;
+  border-left: 2px solid #3597FC;
+}
+.input input::-moz-placeholder {
+  color: #dddddd;
+}
+.input input::placeholder {
+  color: #dddddd;
+}
+
+.radio-group {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 140px;
+  flex-wrap: wrap;
+}
+.radio-group__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #313131;
+}
+.radio-group img {
+  opacity: 0.5;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: gray;
+  font-size: 14px;
+}
+.checkbox__link:visited {
+  color: #3597FC;
+}
+
+.tooltip {
+  cursor: help;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.tooltip::after {
+  font-family: "Barlow", sans-serif;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  color: gray;
+  content: attr(data-tooltip);
+  margin-top: 40px;
+  margin-left: -100px;
+  opacity: 0;
+  padding: 12px;
+  position: absolute;
+  visibility: hidden;
+  z-index: 100;
+  transition: all 0.4s ease-in-out;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 1480px) {
+  .container {
+    max-width: 1440px;
+  }
+  .radio-group {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+@media (max-width: 1060px) {
+  .container {
+    max-width: 1020px;
+  }
+  .registration {
+    flex-direction: row;
+  }
+}
+@media (max-width: 820px) {
+  .container {
+    max-width: 760px;
+  }
+  .registration {
+    flex-direction: column;
+  }
+  .registration__bg {
+    height: 200px;
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    max-width: 600px;
+  }
+  .registration__bg {
+    height: 100px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

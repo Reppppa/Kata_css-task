@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="normalize" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kata</title>
+</head>
+<body>
+    <header class="header container">
+        <img src="img/logo.svg" alt="">
+    </header>
+
+    <main class="main container">
+        
+        <section class="registration">
+            
+            <div class="registration__bg">
+                <!-- <img src="img/bg.jpg" alt=""> -->
+            </div>
+            
+            <div class="registration__content">
+                <form class="registration__form form">
+                    <div class="registration__header">
+                        <h2 class="registration__title">Get iintoo it today</h3>
+                        <span class="registration__subtitle">There is no charge or 
+                        obligation upon registration.</span>
+                    </div>
+                    <div class="form__social social">
+                        <button class="social__button">
+                            <img src="img/facebook.svg" alt="Facebook" width="20px" height="20px">Register with Facebook
+                        </button>
+                        <button class="social__button">
+                            <img src="img/linkedin.svg" alt="Linkedin" width="20px" height="20px">Register with LinkedIn
+                        </button>
+                    </div>
+                    <div class="or">
+                        <span>OR</span>
+                    </div>
+                    <div class="form__field">
+                        <span class="input">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your e-mail">
+                        </span>
+                        <span class="input">
+                            <label for="phone">Phone</label>
+                            <input type="phone" id="phone" placeholder="Enter your number">
+                        </span>
+                    </div>
+                    <div class="form__item">
+                        <h2 class="item__title">What type of investor are you?</h3>
+                        <span class="item__subtitle">Select the type of investor you are below.</span>
+                        <div class="radio-group">
+                            <label class="radio-group__item">
+                                <input type="radio" name="investor" id="Individual">
+                                <label for="Individual" class="radio__text">Individual</label>
+                                <span class="tooltip" data-tooltip="I am a natural person investing on my own
+                                 behalf as a sole owner, join tenant, or tenant in common."><img src="img/information.svg" width="12px" height="12px" alt=""></span>
+                            </label>
+                            <label class="radio-group__item">
+                                <input type="radio" name="investor" id="Business">
+                                <label class="radio__text">Business</label>
+                                <span class="tooltip" data-tooltip="I am a natural person investing on my own
+                                 behalf as a sole owner, join tenant, or tenant in common."><img src="img/information.svg" width="12px" height="12px" alt=""></span>
+                            </label>
+                            <label class="radio-group__item">
+                                <input type="radio" name="investor" id="IRA">
+                                <label class="radio__text">IRA</label>
+                                <span class="tooltip" data-tooltip="I am a natural person investing on my own
+                                 behalf as a sole owner, join tenant, or tenant in common."><img src="img/information.svg" width="12px" height="12px" alt=""></span>
+                            </label>
+                            <label class="radio-group__item">
+                                <input type="radio" name="investor" id="Trust">
+                                <label class="radio__text">Trust</label>
+                                <span class="tooltip" data-tooltip="I am a natural person investing on my own
+                                 behalf as a sole owner, join tenant, or tenant in common."><img src="img/information.svg" width="12px" height="12px" alt=""></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__item checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">I agree to the terms and receiving notification from iintoo 
+                            <a class="checkbox__link" href="#" vlink="blue">Veiw full terms</a>
+                        </label>
+                    </div>
+                    <button class="form__button">Create Account</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
